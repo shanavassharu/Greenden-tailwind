@@ -16,26 +16,34 @@
         <li><a class="hover:text-black" href="./product.html">Products</a></li>
         <li><a class="hover:text-black" href="./Contact.html">Contact</a></li>
     </ul>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden cursor-pointer">
+    <svg id="menuicon"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden cursor-pointer">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>  
 </nav>  
-<!--side navbar-->
-<section id="sidenav" class="bg-green-100 fixed z-20 right-0 top-0 transition-all duration-1000" style="width:50%;height:100%;right:-50%">
-<div class="text-right mr-5 mt-5">
-    <p id="close-nav" class="inline cursor-pointer">X</p>
-</div>
-<ul class="flex flex-col gap-10 text-center mt-10 text-gray-600">
-    <li><a class="hover:text-black" href="./index.html">Home</a></li>
-        <li><a class="hover:text-black" href="./product.html">Products</a></li>
-        <li><a class="hover:text-black" href="./Contact.html">Contact</a></li>
-</ul>
-</section> 
+ <!--side navbar-->
+ <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-500"style="width:50%; height:100vh;right: -50%">
+    <div class="text-right p-5">
+        <p id="closenav"class="inline cursor-pointer">X</p>
+
+    </div>
+    <ul class="flex  flex-col gap-10  items-center text-gray-600 ">
+        <li>
+            <a class="hover:underline hover:text-black" href="./index.html" >Home</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="./product.html">Products</a>
+        </li>
+        <li>
+            <a class="hover:underline  hover:text-black" href="./Contact.html">Contact</a>
+        </li>
+       
+    </ul>
+</section>
 <!--Product-->
 <section class="text-center">
     <h1 class="text-3xl font-bold mt-5">Our products</h1>
-    <input type="text" id="search-box"  placeholder="Search for a products" style="width: 80%; " class="inline p-3 mt-5 border border-black">
-<div class="grid grid-cols-2 text-center md:grid-cols-4" id="product-container">
+    <input type="text" id="search"  placeholder="Search for a products" style="width: 80%; " class="inline p-3 mt-5 border border-black">
+<div id="product-container" class="grid grid-cols-2 text-center md:grid-cols-4" id="product-container">
     <div>
         <img src="./image/bestseller_1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 mt-5" alt="">
             <h1>Rose plant</h1>
@@ -89,7 +97,7 @@
         <p>@ 2021 Greenyday.com</p>
 
     </section>
-        
+        <script src="product.js"></script>
   
 </body>
 </html>
